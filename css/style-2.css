@@ -1,0 +1,456 @@
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+html,
+body {
+  height: 100%;
+  /* background-image: url("images/terminal.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed; */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content area fills the remaining space */
+.main-content {
+  flex-grow: 1;
+}
+
+.home-title {
+  color: #00b700;
+  margin: 150px auto 0 auto;
+  text-align: center;
+  width: 500px;
+  font-size: 100px;
+  position: relative;
+}
+
+.home-description {
+  color: #00b700;
+  text-align: center;
+  font-size: 25px;
+  position: relative;
+  bottom: 200px;
+}
+
+body {
+  font-family: "Courier Prime", monospace;
+  line-height: 1.6;
+  background-image: url("../images/terminal.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  color: #2464dc;
+}
+
+a.custom-link {
+  color: #3447e9;
+  text-decoration: none;
+}
+
+a.custom-link:visited {
+  color: #3447e9;
+}
+
+a.custom-link:hover,
+a.custom-link:active {
+  color: #3447e9;
+  text-decoration: underline;
+}
+header {
+  background-color: #4d515a;
+  color: #ffffff;
+  padding: 20px;
+  height: 60px;
+  text-align: center;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo-link {
+  width: 70px;
+  height: auto;
+  left: 20px;
+  display: inline-block;
+  padding: 1px 1px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-logo-link:hover {
+  background-color: #445a8f;
+}
+
+.navbar-logo {
+  width: 70px;
+  height: auto;
+  left: 20px;
+}
+
+.navbar ul li a:hover {
+  background-color: #000000;
+}
+
+.navbar ul li a.active {
+  border-bottom: 2px solid #000000;
+}
+
+.navbar-links {
+  display: none;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 1000;
+}
+
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #00b700;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidebar-open {
+  width: 250px;
+}
+
+.toggle-sidebar-button {
+  display: block;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.footer {
+  background-color: #4d515a;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  bottom: 0;
+  height: auto;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+  height: 120px;
+}
+
+.toggle-style-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  left: 120px;
+}
+
+.toggle-style-button:hover {
+  background-color: #0056b3;
+}
+
+.home-page-section {
+  background-color: #000000;
+  border: 3px solid #9e9e9e;
+  border-radius: 8px;
+  margin: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project1,
+.project2,
+.project3,
+.project4 {
+  width: 48%;
+  background-color: #000000;
+  border: 3px solid #9e9e9e;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-image {
+  position: relative;
+  width: 100%;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-description {
+  color: #00b700;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.project-description h2 {
+  color: #00e200;
+  margin-bottom: 10px;
+}
+
+.project-description p {
+  font-size: 16px;
+}
+
+section {
+  position: relative;
+  color: #00b700;
+  /* background-color: #ffffff; */
+  padding: 20px;
+  margin: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #000000;
+  z-index: 10;
+}
+
+#title-bar {
+  text-align: center;
+  color: #00e200;
+  padding: 40px;
+  background-color: #000000;
+}
+
+h2 {
+  color: #00b700;
+}
+
+.project-description,
+.pdf-viewer-container,
+.technical-skills h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+textarea {
+  width: 100%;
+  max-width: 600px;
+  height: 100px;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+  resize: none;
+  background-color: #f0f0f0;
+}
+
+#prompt-box {
+  margin-top: 20px;
+  background-color: #e6eef7;
+  border-left: 4px solid #2a3d66;
+}
+
+.decorative {
+  position: absolute;
+  opacity: 1;
+  z-index: 15;
+  pointer-events: none;
+}
+
+.basketball {
+  top: -30px;
+  right: -30px;
+  width: 100px;
+  height: auto;
+  z-index: 15;
+}
+
+.poker-chip {
+  bottom: -55px;
+  left: -30px;
+  width: 100px;
+  height: auto;
+}
+
+.decision-making-icon {
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: auto;
+}
+
+#mvp-race {
+  font-size: 1.2rem;
+}
+
+.parent-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.pdf-viewer-container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #000000;
+  border-radius: 8px;
+  order: 3; /* Move the resume to the bottom */
+}
+
+.pdf-viewer {
+  width: 100%;
+  height: 600px;
+  border: none;
+}
+
+.img-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  max-width: 1200px;
+  background-color: #000000;
+  order: 1;
+}
+
+.java {
+  width: 150px;
+  height: 150px;
+}
+
+.python {
+  width: 210px;
+  height: 150px;
+}
+
+.csharp {
+  width: 135px;
+  height: 150px;
+}
+
+.unity {
+  width: 225x;
+  height: 150px;
+  background-color: #b5b5b5;
+}
+
+.html-css {
+  width: 150px;
+  height: 150px;
+}
+
+.react {
+  width: 150px;
+  height: 150px;
+}
+
+.technical-interests-title,
+.technical-skills-title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.technical-interests-section {
+  order: 2;
+}
+
+.service-container {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.service-project {
+  width: 48%;
+  background-color: #000000;
+  border: 3px solid #9e9e9e;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.linkedin-link {
+  text-decoration: none;
+}
+
+.linkedin-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.linkedin-link:hover .linkedin-icon {
+  transform: scale(1.1);
+}

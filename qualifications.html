@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUALIFICATIONS</title>
+    <link rel="stylesheet" type="text/css" href="css/style-1.css" id="page-style"></link>
+    <script src="functions.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="navbar-logo-link">
+          <img src="images/Logo.png" alt="Logo" class="navbar-logo" id="logo"/>
+        </a>
+        <button onclick="toggleStyleSheet()" class="toggle-style-button">Toggle Style</button>
+        <button id="sidebarToggleButton" class="toggle-sidebar-button" onclick="toggleSidebar()">☰</button>
+        <ul class="navbar-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="qualifications.html" class="active">Qualifications</a></li>
+          <li><a href="service.html">Service</a></li>
+          <li><a href="chatgpt.html">AI Generated</a></li>
+        </ul>
+      </nav>
+      <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="qualifications.html">Qualifications</a>
+        <a href="service.html">Service</a>
+        <a href="chatgpt.html">AI Generated</a>
+      </div>
+    </header>
+    <div class="parent-container">
+      <div class="pdf-viewer-container">
+        <h2>My Resume</h2>
+        <iframe
+          src="https://drive.google.com/file/d/1VOyXHKVeeoEjcrPQiLddb2Fjl5VilNyR/preview"
+          class="pdf-viewer"
+          width="100%"
+          height="600px"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="technical-skills">
+        <h2 class="technical-skills-title">Technical Skills</h2>
+        <div class="img-container">
+          <a href="https://www.java.com/en/" target="_blank">
+            <img src="images/java.webp" class="java" />
+          </a>
+          <a href="https://www.python.org/" target="_blank">
+            <img src="images/python.png" class="python" />
+          </a>
+          <a
+            href="https://dotnet.microsoft.com/en-us/languages/csharp"
+            target="_blank"
+          >
+            <img src="images/csharp.png" class="csharp" />
+          </a>
+          <img src="images/unity.png" class="unity" />
+          <img src="images/html-css-javascript.png" class="html-css" />
+          <img src="images/react.webp" class="react" />
+        </div>
+      </div>
+      <section class="technical-interests-section">
+        <h2 class="technical-interests-title">Technical Interests</h2>
+        <p>
+          I've interned at two companies,
+          <a
+            href="https://bossfightentertainment.com/"
+            target="_blank"
+            class="custom-link"
+            >Boss Fight Entertainment</a
+          >, a mobile gaming company, and
+          <a href="https://www.paycom.com/" target="_blank" class="custom-link"
+            >Paycom</a
+          >, an HR/Payroll company. My prior interest in video games inspired my
+          drive to explore development in that field. I worked under Boss Fight as
+          well as a Game Development Engineer later on, and I was able to form a
+          familiarity with game development, but not necessarily a passion. I
+          looked to Paycom to give me a new perspective through a new choice of
+          field. I primarily worked as a front-end developer at Paycom, utilizng
+          React and occasionally Node.js. I really enjoyed my time working in the
+          front-end, and I am happy to continue doing so. However, I would like to
+          see if I could seize an opportunity to interact with the back-end of a
+          project so that I could hone a full-stack skillset.
+        </p>
+      </section>
+    </div>  
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; Brandon Batac. Some rights reserved.</p>
+        <a
+          href="https://www.linkedin.com/in/brandonbatac/"
+          target="_blank"
+          class="linkedin-link"
+        >
+          <img
+            src="images/linkedin-icon.png"
+            alt="LinkedIn"
+            class="linkedin-icon"
+          />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
